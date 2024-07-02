@@ -1,11 +1,11 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import React from "react";
-import Dashboard from "@/pages/Dashboard";
+import Dashboard from "../pages/Dashboard";
 
-import Layout from "@/layouts/BaseLayout";
+import Layout from "../layouts/BaseLayout";
 
-const Order = React.lazy(() => import("@/pages/Order"));
-const Product = React.lazy(() => import("@/pages/Product"));
+const Order = React.lazy(() => import("../pages/Order"));
+const Product = React.lazy(() => import("../pages/Product"));
 
 const routes = [
   {
@@ -32,4 +32,6 @@ const routes = [
   },
 ];
 
-export const router = createBrowserRouter(routes);
+const router = createBrowserRouter(routes);
+
+export { router };

@@ -1,13 +1,23 @@
-# Local
+# User preferences
 .DS_Store
-*.local
-*.log*
 
-# Dist
-node_modules
+# Dependencies
+node_modules/
+
+# Builds / Caches
 dist/
 
-# IDE
+# Logs
+npm-debug.log
+debug
+.clinic
+
+# IDEs / Editors
+.devcontainer/
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
+*.code-workspace
+.history/
+*.sublime-settings
+.*.swp
